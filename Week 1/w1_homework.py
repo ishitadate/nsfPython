@@ -18,27 +18,27 @@ Answer: Question A
 # Question 1
 
 number_1 = "six"
-type_1 = str 
+type_1 =  
 
 # Question 2
 
 number_2 = 5 + 6
-type_2 = int 
+type_2 =  
 
 # Question 3
 
 number_3 = 12 // 5
-type_3 = int 
+type_3 =  
 
 # Question 4
 
 number_4 = 3.1 * 4
-type_4 = float 
+type_4 =  
 
 # Question 5
 
 number_5 = 4 == 6
-type_5 = bool 
+type_5 =  
 
 
 # Tests ... do not edit
