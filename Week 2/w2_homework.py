@@ -1,19 +1,5 @@
-"""
-Guesser Game Part I:
-In this game the user wants to guess your string.
-
-Pick a value for a string.
-
-Take an input from the user, which is their guess.
-
-If the guess is correct, print "good job!"
-If the guess is wrong print "try again"
-"""
-
-
-
 """ 
-Guesser Game Part II:
+Guesser Game:
 In this game the user is trying to guess your number
 
 Pick a value for an inital number.
