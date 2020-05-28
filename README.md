@@ -6,6 +6,6 @@ Homework Links:
 
 | Week  | Link |
 | ------------- | ------------- |
-| 1  | https://forms.gle/d2rZDRw4sJEniXSM8  |
+| 1  | offline  |
 | 2  | https://forms.gle/dWFawgnw2frjmzQj8  |
 | 3  | https://forms.gle/dzGecuWn5W1DrQVH8  |
