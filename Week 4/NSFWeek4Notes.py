@@ -181,9 +181,9 @@ aStr3 = " the best"
 """
 We want to combine the strings, only if the format is what we want...
 1. String 1 is only alphabetic 
-# 2. String 2
-# 	a. The last char is %
-# 	b. The rest of the chars are numeric
+ 2. String 2
+ 	a. The last char is %
+ 	b. The rest of the chars are numeric
 3. String 3 is lowercase
 
 Write nested if statements to check these conditions, if they are all true, print the concatanation.
