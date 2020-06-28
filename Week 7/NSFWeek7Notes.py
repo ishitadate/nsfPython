@@ -83,14 +83,37 @@ print("Dictionary vs list")
 
 print("Student example 1")
 # Write a function that will add a given value with a given key only if that key does not already exist in the dictionary.
+d = {}
+def add(key, value):
+    if key not in d:
+        d[key] = value
 
 print("Student example 2")
 # How can you use a dictionary to create a sample grocery list?
+# answer: keys are the items, values are the amounts of each item
 
 print("Student example 3")
 # Write a Python program to combine two lists into 1 dictionary.
+def combine(keys, values):
+  dictionary = {}
+  for x in range (0, len(keys)):
+    dictionary[keys[x]] = values[x]
+  return dictionary
+
+newDictionary = combine([],[])
 
 print("Student example 4")
+# write a program to print all unique values in a dictionary
+# a function that takes in a dictionary and returns a list of all the unique values
+
+def unique(dictionary):
+  newList = []
+  for x in dictionary.values():
+    if x not in newList:
+      newList.append(x)
+  return newList
+
+print("Student example 5")
 """
 You run a fruit store, and you sell oranges, apples, bananas, papayas, and pears. Write a dictionary of all the 
 items and how much they cost, and write another dictionary with the same items and how many you have. 
@@ -98,3 +121,21 @@ How much would you earn if you sold everything?
 How much would you earn if you sold only the apples?
 How much would you earn if you sold the items whose names start with “p”?
 """
+prices = {"oranges": 1, "apples": 2,"bananas": 3, "papayas": 4, "pears":5}
+amounts = {"oranges": 5, "apples": 4, "bananas": 3, "papayas": 2, "pears": 1}
+
+#Q1
+total = 0
+for x in prices.values():
+  total+=x
+for key in prices:
+  total+=prices[key]
+print(total)
+#Q2
+print(amounts["apples"]*prices["apples"])
+#Q3
+newTotal = 0
+for key in prices:
+  if key.lower().startswith('p'):
+    newTotal+= prices[key]*amounts[key]
+print(newTotal)
