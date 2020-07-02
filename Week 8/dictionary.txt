@@ -1,0 +1,5 @@
+What is 2+2?,4
+What is 4*6?,24
+What is my name?,Suhani
+What is my favorite ice cream flavor?,coffee
+What is my favorite color?,blue
