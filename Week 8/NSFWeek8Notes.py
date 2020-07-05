@@ -6,7 +6,8 @@ Question 1
 Create a dictionary with 3 students. Each student has a grade for each of their 5 subjects as well as a list of
 supplies in their bag. What is the best data structure to manage all of this?
 """
-# answer: create a nested dictonary!
+# answer: create a nested dictonary! is this very efficient and easy to use? no. but it does exist, 
+# so I wanted to make sure you guys knew about it.
 school = {
     "student1": {
         "grades": {
@@ -99,23 +100,28 @@ print("reading a file")
 # the string to signify read mode is "r"
 # file must be in the current folder
 f = open("hello.txt", "r")
-# Let's get the content of the file and print it out:
-file_contents = f.read() #(string)
-print(file_contents)
-# How about reading just the first line?
-first_line = f.readline()
-second_line = f.readline()
-print(second_line)
 
 # So, when we open a file, we have to close it, right?
 # Option 1: use open() to open a file, and when you're done with it, use close() to close the file. 
-f = open("hello.txt","r")
 f_text = f.read()
 f.close()
 # We don't have to worry about using close() when we're done if we use the with keyword:
 with open("hello.txt", "r") as f:
     # do the stuff about the file f in here. (remember to indent!)
-    print(f.readline())
+    print("do something")
+
+# Let's get the content of the file and print it out:
+f = open("hello.txt", "r")
+file_contents = f.read() #(string)
+print(file_contents)
+f.close()
+# How about reading just the first line?
+f = open("hello.txt", "r")
+first_line = f.readline()
+second_line = f.readline()
+print(second_line)
+f.close()
+
 
 print("Writing to a file")
 # First, let's open the text file, as usual, but this time we tell python we'll be writing in the file:
@@ -157,12 +163,6 @@ print(d)
 
 print("example 3")
 # take input from the command line and write it to a file
-name = raw_input("What's your name? ")
+name = raw_input("What's your name? ") # use input() for Python 3
 with open("hello.txt", "a") as f:
     f.write("\n" + name)
-
-print("CHALLENGE")
-# make a game! make your own answer key file with the questions and correct answers
-# have your program read the questions and send them to the user through the command line
-# the program will read the user's answers and determine if it is right or wrong
-# the program will write a file that says "right" or "wrong" for each question and a final score
