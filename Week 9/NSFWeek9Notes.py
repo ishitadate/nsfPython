@@ -4,7 +4,53 @@ print("Homework Review")
 
 print("Lesson")
 print("Part 1: Object Oriented Programming")
+"""
+Volunteer 1: Anishka
+the office room
+walls: 4
+ceiling: 1
+door: 1
+purpose: "quiet place to work"
+furniture: desk, cabinets, two chairs, piano
+special? yes, trophy case
 
+Volunteer 2: Diksha
+her bedroom
+walls: 4
+ceiling: 1
+door: 3
+purpose: "to sleep, work, relax"
+furniture: bed, desk, chair, mirrors
+special? yes, map and travel wall
+
+Volunteer 3: Sai
+his bedroom
+walls: 8
+ceiling: 1
+door: 3
+purpose: "to do homework, read, play, sleep"
+furniture: bookshelves, desk, chair, bed
+special? no
+
+ROOM TEMPLATE
+Room
+integer walls
+ceiling: 1
+integer doors
+string purpose
+list furniture
+
+class: template
+object: item of that type
+class is used to create object
+
+class allows you to make user-defined data structures
+
+object-oriented Programming
+OOP is an approach for modeling concrete, real-world things, like rooms, as well as relations between things, 
+like students and teachers. OOP models real-world entities as software objects that you can work with that have 
+some data associated with them and can perform certain functions that are dictated by their class
+"""
 
 print("Part 2: Modules, Packages, Libraries")
 # MODULES
@@ -67,19 +113,8 @@ print("Part 2: Modules, Packages, Libraries")
 # random
 # provides functions to select/choose things basically randomly
 # functions like randint, randrange, choice
-# examples of those 3
 
 # sys
 # provides functions system related functions and attributes
 # important one is argv
-# example of taking a command-line argument
 
-print("example 1")
-# create something that takes command-line imput, does some mathematical calculations with the 
-# number inputted and some random numbers, and returns something back
-
-print("example 2")
-# generate a random number
-# have the user guess until they're right
-
-# for more information on everything built-in: https://docs.python.org/3/library/
